@@ -260,10 +260,10 @@ summary {
 
 body {
   margin: 0;
-  padding: 0;
+  padding: 5vh 0;
   font-family: "Outfit", sans-serif;
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   background: hsl(217deg, 54%, 11%);
   display: flex;
   flex-direction: column;
@@ -290,7 +290,7 @@ img {
 .nft-card {
   width: min(90%, 350px);
   background: hsl(216deg, 50%, 16%);
-  margin-inline: auto;
+  margin: 0 auto;
   font-size: 1.125rem;
   padding: 1em;
   border-radius: 1em;
