@@ -326,7 +326,8 @@ img {
   color: hsl(0deg, 0%, 100%);
   font-weight: 600;
   font-size: 1.25rem;
-  margin: 1.5em 0;
+  margin-top: 1.25em;
+  margin-bottom: 1em;
 }
 .nft-card__heading:hover {
   color: rgb(0, 255, 247);
@@ -334,14 +335,18 @@ img {
 }
 .nft-card__text {
   line-height: 1.5;
+  margin: 0.5em 0;
 }
 .nft-card__flex {
   display: flex;
   justify-content: space-between;
-  padding-top: 0.5em;
 }
 .nft-card__eth {
   color: rgb(0, 255, 247);
+  font-size: 1rem;
+}
+.nft-card__timer {
+  font-size: 1rem;
 }
 .nft-card__eth::before {
   content: url("../images/icon-ethereum.svg");
