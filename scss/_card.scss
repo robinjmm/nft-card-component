@@ -1,0 +1,103 @@
+@use 'variables'as *;
+
+.nft-card {
+    width: min(90%, 350px);
+    background: $card-bg-color;
+    margin-inline: auto;
+    font-size: rem(18px);
+    padding: 1em;
+    border-radius: 1em;
+    box-shadow: $default-box-shadow;
+    color: $primary;
+
+    &__bg-layer {
+        // Setting the font-size to 0 constrains the overlay to image height
+        font-size: 0;
+        position: relative;
+        border-radius: rem(10px);
+        overflow: hidden;
+
+
+        &::after {
+            content: url('../images/icon-view.svg');
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: rem(10px);
+            background-color: $highlight;
+            opacity: 0;
+            transition: opacity 0.5s ease 0s;
+        }
+
+        &:hover::after {
+            opacity: 0.5;
+            cursor: pointer;
+        }
+    }
+
+    &__heading {
+        color: $secondary;
+        font-weight: 600;
+        font-size: rem(20px);
+        margin: 1.5em 0;
+
+        &:hover {
+            color: $highlight;
+            cursor: pointer;
+        }
+    }
+
+    &__text {
+        line-height: 1.5;
+    }
+
+    &__flex {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 0.5em;
+    }
+
+    &__eth {
+        color: $highlight;
+    }
+
+    &__eth::before {
+        content: url('../images/icon-ethereum.svg');
+        margin-right: .3em;
+        vertical-align: middle;
+    }
+
+    &__timer::before {
+        content: url('../images/icon-clock.svg');
+        margin-right: .3em;
+        vertical-align: middle;
+    }
+
+    &__creator {
+        display: flex;
+        align-items: center;
+        border-top: 1px solid $line-color;
+        padding-top: 0.5em;
+    }
+
+    &__creator-image {
+        width: 30px;
+        height: 30px;
+        border: 1px solid white;
+        border-radius: 50%;
+        margin-right: rem(14px);
+    }
+
+    &__creator-name {
+        color: $secondary;
+
+        &:hover {
+            color: $highlight;
+        }
+    }
+}
