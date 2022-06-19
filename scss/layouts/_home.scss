@@ -1,0 +1,12 @@
+@use "../base/variables" as *;
+
+body {
+    background: var(--body-bg-color);
+    font-family: var(--ff-primary);
+    width: 100vw;
+    margin: 0;
+    padding: 5vh 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,14 +1,14 @@
-@use 'variables'as *;
+@use "../base/variables" as *;
 
 .nft-card {
     width: min(90%, 350px);
-    background: $card-bg-color;
+    background: var(--card-bg-color);
     margin: 0 auto;
     font-size: rem(18px);
     padding: 1em;
     border-radius: 1em;
-    box-shadow: $default-box-shadow;
-    color: $primary;
+    box-shadow: var(--box-shadow);
+    color: var(--text-color);
 
     &__bg-layer {
         // Setting the font-size to 0 constrains the overlay to image height
@@ -29,7 +29,7 @@
             align-items: center;
             justify-content: center;
             border-radius: rem(10px);
-            background-color: $highlight;
+            background-color: var(--highlight-color);
             opacity: 0;
             transition: opacity 0.5s ease 0s;
         }
@@ -41,14 +41,14 @@
     }
 
     &__heading {
-        color: $secondary;
+        color: var(--heading-color);
         font-weight: 600;
         font-size: rem(20px);
         margin-top: 1.25em;
         margin-bottom: 1em;
 
         &:hover {
-            color: $highlight;
+            color: var(--highlight-color);
             cursor: pointer;
         }
     }
@@ -61,10 +61,12 @@
     &__flex {
         display: flex;
         justify-content: space-between;
+        margin-top: 1em;
+        margin-bottom: 0.8em;
     }
 
     &__eth {
-        color: $highlight;
+        color: var(--highlight-color);
         font-size: rem(16px);
     }
 
@@ -87,8 +89,8 @@
     &__creator {
         display: flex;
         align-items: center;
-        border-top: 1px solid $line-color;
-        padding-top: 0.5em;
+        border-top: 1px solid var(--line-color);
+        padding-top: 0.75em;
     }
 
     &__creator-image {
@@ -100,10 +102,10 @@
     }
 
     &__creator-name {
-        color: $secondary;
+        color: var(--heading-color);
 
         &:hover {
-            color: $highlight;
+            color: var(--highlight-color);
         }
     }
 }

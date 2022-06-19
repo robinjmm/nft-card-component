@@ -1,0 +1,21 @@
+:root {
+    // Colors
+    --text-color: hsl(215, 51%, 70%);
+    --heading-color: hsl(0, 0%, 100%);
+    --highlight-color: rgb(0, 255, 247);
+    --body-bg-color: hsl(217, 54%, 11%);
+    --card-bg-color: hsl(216, 50%, 16%);
+    --line-color: hsl(215, 32%, 27%);
+
+    // Fonts
+    --ff-primary: 'Outfit', sans-serif;
+
+    // Box shadow
+    --box-shadow: 0px 20px 20px 10px rgba(0, 0, 0, 0.1);
+}
+
+// Functions
+@function rem($value) {
+    $remValue: calc(($value / 16px) *1rem);
+    @return $remValue;
+}
