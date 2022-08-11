@@ -3,7 +3,7 @@
 
 ## Links:
 - [Challenge Link](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U)
-- [Site Preview](https://robinjmm-nft-card-component.netlify.app/)
+- [Site Preview](https://robinjmm-nft-card.vercel.app/)
 
 ## About
 This is my solution for the the challenge of building an NFT card component from [Frontendmentor.io](https://frontendmentor.io).
