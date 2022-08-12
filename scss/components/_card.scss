@@ -19,7 +19,7 @@
 
 
         &::after {
-            content: url('../images/icon-view.svg');
+            content: url("../../assets/images/icon-view.svg");
             position: absolute;
             left: 0;
             top: 0;
@@ -75,13 +75,13 @@
     }
 
     &__eth::before {
-        content: url('../images/icon-ethereum.svg');
+        content: url("../../assets/images/icon-ethereum.svg");
         margin-right: .3em;
         vertical-align: middle;
     }
 
     &__timer::before {
-        content: url('../images/icon-clock.svg');
+        content: url("../../assets/images/icon-clock.svg");
         margin-right: .3em;
         vertical-align: middle;
     }
