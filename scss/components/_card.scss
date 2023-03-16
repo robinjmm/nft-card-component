@@ -11,6 +11,11 @@
 	box-shadow: var(--box-shadow);
 	color: var(--text-color);
 
+	&__image {
+		width: 278px;
+		height: 278px;
+	}
+
 	&__bg-layer {
 		// Setting the font-size to 0 constrains the overlay to image height
 		font-size: 0;

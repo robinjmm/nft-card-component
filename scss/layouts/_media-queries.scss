@@ -3,5 +3,10 @@
 @media (min-width: 375px) {
 	.nft-card {
 		font-size: var(--fs-md);
+
+		&__image {
+			width: 302px;
+			height: 302px;
+		}
 	}
 }
