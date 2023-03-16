@@ -1,111 +1,108 @@
-@use "../base/variables" as *;
+@use "../base/functions" as *;
 
 .nft-card {
-    width: min(90%, 350px);
-    background: var(--card-bg-color);
-    margin: 0 auto;
-    font-size: rem(18px);
-    padding: 1em;
-    border-radius: 1em;
-    box-shadow: var(--box-shadow);
-    color: var(--text-color);
+	width: min(87%, 350px);
+	background: var(--card-bg-color);
+	margin: 0 auto;
+	font-size: var(--fs-sm);
+	font-weight: var(--fw-regular);
+	padding: rem(24);
+	border-radius: rem(15);
+	box-shadow: var(--box-shadow);
+	color: var(--text-color);
 
-    &__bg-layer {
-        // Setting the font-size to 0 constrains the overlay to image height
-        font-size: 0;
-        position: relative;
-        border-radius: rem(10px);
-        overflow: hidden;
+	&__bg-layer {
+		// Setting the font-size to 0 constrains the overlay to image height
+		font-size: 0;
+		position: relative;
+		border-radius: rem(8);
+		overflow: hidden;
 
 
-        &::after {
-            content: url("../../assets/images/icon-view.svg");
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: rem(10px);
-            background-color: var(--highlight-color);
-            opacity: 0;
-            transition: opacity 0.5s ease 0s;
-        }
+		&::after {
+			content: url("/images/icon-view.svg");
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: rem(8);
+			background-color: var(--highlight-color);
+			opacity: 0;
+			transition: opacity 0.5s ease 0s;
+		}
 
-        &:hover::after {
-            opacity: 0.5;
-            cursor: pointer;
-        }
-    }
+		&:hover::after {
+			opacity: 0.5;
+			cursor: pointer;
+		}
+	}
 
-    &__heading {
-        color: var(--heading-color);
-        font-weight: 600;
-        font-size: rem(20px);
-        margin-top: 1.25em;
-        margin-bottom: 1em;
+	&__heading {
+		color: var(--heading-color);
+		font-weight: var(--fw-bold);
+		font-size: var(--fs-xl);
+		margin-top: rem(24);
+		margin-bottom: rem(12);
 
-        &:hover {
-            color: var(--highlight-color);
-            cursor: pointer;
-        }
-    }
+		&:hover {
+			color: var(--highlight-color);
+			cursor: pointer;
+		}
+	}
 
-    &__text {
-        line-height: 1.5;
-        margin: 0.5em 0;
-    }
+	&__text {
+		font-size: var(--fs-lg);
+		line-height: 1.5;
+		font-weight: var(--fw-light);
+		margin-bottom: rem(16);
+	}
 
-    &__flex {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 1em;
-        margin-bottom: 0.8em;
-    }
+	&__flex {
+		display: flex;
+		justify-content: space-between;
+		margin-bottom: rem(16);
+	}
 
-    &__eth {
-        color: var(--highlight-color);
-        font-size: rem(16px);
-    }
+	&__eth {
+		color: var(--highlight-color);
+	}
 
-    &__timer {
-        font-size: rem(16px);
-    }
+	&__eth::before {
+		content: url("/images/icon-ethereum.svg");
+		margin-right: .3em;
+		vertical-align: middle;
+	}
 
-    &__eth::before {
-        content: url("../../assets/images/icon-ethereum.svg");
-        margin-right: .3em;
-        vertical-align: middle;
-    }
+	&__timer::before {
+		content: url("/images/icon-clock.svg");
+		margin-right: .3em;
+		vertical-align: middle;
+	}
 
-    &__timer::before {
-        content: url("../../assets/images/icon-clock.svg");
-        margin-right: .3em;
-        vertical-align: middle;
-    }
+	&__creator {
+		display: flex;
+		align-items: center;
+		border-top: 1px solid var(--line-color);
+		padding-top: rem(22);
+		gap: rem(16);
+	}
 
-    &__creator {
-        display: flex;
-        align-items: center;
-        border-top: 1px solid var(--line-color);
-        padding-top: 0.75em;
-    }
+	&__creator-image {
+		width: 30px;
+		height: 30px;
+		border: 1px solid white;
+		border-radius: 50%;
+	}
 
-    &__creator-image {
-        width: 30px;
-        height: 30px;
-        border: 1px solid white;
-        border-radius: 50%;
-        margin-right: rem(14px);
-    }
+	&__creator-name {
+		color: var(--heading-color);
 
-    &__creator-name {
-        color: var(--heading-color);
-
-        &:hover {
-            color: var(--highlight-color);
-        }
-    }
+		&:hover {
+			color: var(--highlight-color);
+		}
+	}
 }

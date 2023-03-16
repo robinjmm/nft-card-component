@@ -1,21 +1,28 @@
 :root {
-    // Colors
-    --text-color: hsl(215, 51%, 70%);
-    --heading-color: hsl(0, 0%, 100%);
-    --highlight-color: rgb(0, 255, 247);
-    --body-bg-color: hsl(217, 54%, 11%);
-    --card-bg-color: hsl(216, 50%, 16%);
-    --line-color: hsl(215, 32%, 27%);
+	// Font Colors
+	--text-color: hsl(215, 51%, 70%);
+	--heading-color: hsl(0, 0%, 100%);
+	--highlight-color: rgb(0, 255, 247);
 
-    // Fonts
-    --ff-primary: 'Outfit', sans-serif;
+	// Background Colors
+	--body-bg-color: hsl(217, 54%, 11%);
+	--card-bg-color: hsl(216, 50%, 16%);
+	--line-color: hsl(215, 32%, 27%);
 
-    // Box shadow
-    --box-shadow: 0px 20px 20px 10px rgba(0, 0, 0, 0.1);
-}
+	// Font Families
+	--ff-primary: 'Outfit', sans-serif;
 
-// Functions
-@function rem($value) {
-    $remValue: calc(($value / 16px) *1rem);
-    @return $remValue;
+	// Font Sizes
+	--fs-sm: 0.9375rem;
+	--fs-md: 1rem;
+	--fs-lg: 1.125rem;
+	--fs-xl: 1.375rem;
+
+	// Font Weights
+	--fw-light: 300;
+	--fw-regular: 400;
+	--fw-bold: 600;
+
+	// Box shadow
+	--box-shadow: 0px 20px 20px 10px rgba(0, 0, 0, 0.1);
 }

@@ -1,0 +1,7 @@
+@use "../base/functions" as *;
+
+@media (min-width: 375px) {
+	.nft-card {
+		font-size: var(--fs-md);
+	}
+}

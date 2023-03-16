@@ -1,17 +1,10 @@
 @use "base/variables";
-
 @use "base/fonts";
-
-@use "base/reset";
-
 @use "base/defaults";
 
-@use "components/card";
-
-@use "components/link-icons";
-
-@use "fontawesome/fontawesome";
-
-@use "fontawesome/brands";
-
 @use "layouts/home";
+
+@use "components/card";
+@use "components/fa-icons";
+
+@use "layouts/media-queries";
